@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DujeToken Interaction</title>
+  </head>
+  <body>
+    <h1>DujeToken Interaction</h1>
+
+    <label for="address">Enter Ethereum Address:</label>
+    <input type="text" id="address" placeholder="0x..." /><br />
+
+    <button onclick="getBalance()">Get Balance</button>
+    <p id="balanceResult"></p>
+    <br />
+
+    <hr />
+
+    <!-- Transfer Tokens Section -->
+    <label for="senderAddress">Enter Sender Address:</label>
+    <input type="text" id="senderAddress" placeholder="0x..." /><br />
+
+    <label for="recipientAddress">Enter Recipient Address:</label>
+    <input type="text" id="recipientAddress" placeholder="0x..." /><br />
+
+    <label for="transferAmount">Enter Transfer Amount:</label>
+    <input type="text" id="transferAmount" placeholder="Amount" /><br />
+
+    <button onclick="transferTokens()">Transfer Tokens</button>
+    <p id="transferResult"></p>
+    <br />
+    <br />
+
+    <hr />
+
+    <!-- Mint Tokens Section -->
+    <label for="mintOwnerAddress">Enter Owner Address for Minting:</label>
+    <input type="text" id="mintOwnerAddress" placeholder="0x..." /><br />
+
+    <label for="mintAmount">Enter Mint Amount:</label>
+    <input type="text" id="mintAmount" placeholder="Amount" /><br />
+
+    <button onclick="mintTokens()">Mint Tokens</button>
+    <p id="mintResult"></p>
+    <br />
+
+    <hr />
+
+    <!-- Burn Tokens Section -->
+    <label for="burnOwnerAddress">Enter Owner Address for Burning:</label>
+    <input type="text" id="burnOwnerAddress" placeholder="0x..." /><br />
+
+    <label for="burnAmount">Enter Burn Amount:</label>
+    <input type="text" id="burnAmount" placeholder="Amount" /><br />
+
+    <button onclick="burnTokens()">Burn Tokens</button>
+    <p id="burnResult"></p>
+    <br />
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

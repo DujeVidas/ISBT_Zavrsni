@@ -16,6 +16,11 @@ Make sure you have Node.js and npm installed on your machine. You can download t
 
 2. Download and install Ganache from [here](https://www.trufflesuite.com/ganache).
 
+3. Install web3
+    ```bash
+    npm i web3
+    ```
+
 ## Setup
 
 1. Open Ganache and set up a new workspace.
@@ -46,3 +51,9 @@ Ensure your Ganache workspace is running, and then run the following command to 
 truffle test
 ```
 This will run the test suite and provide you with the results.
+
+## Interaction using web3
+
+In app.js put the first adress from Ganaches users tab into "contractAdress".
+Also from DujeToken.json copy the ABI and put it into "contractABI"
+Open the index.html in your browser
