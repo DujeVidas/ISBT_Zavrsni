@@ -55,5 +55,7 @@ This will run the test suite and provide you with the results.
 ## Interaction using web3
 
 In app.js put the first adress from Ganaches users tab into "contractAdress".
-Also from DujeToken.json copy the ABI and put it into "contractABI"
-Open the index.html in your browser
+
+Also from DujeToken.json copy the ABI and put it into "contractABI".
+
+Open the index.html in your browser.
