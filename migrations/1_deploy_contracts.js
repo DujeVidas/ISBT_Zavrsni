@@ -6,7 +6,7 @@ module.exports = function (deployer) {
   const name = "DujeToken";
   const symbol = "DUJE";
   const decimals = 18;
-  const initialSupply = 1000000; // Primjer: Početna opskrba tokena
+  const initialSupply = 1000000;
 
   // Deployanje pametnog ugovora
   deployer.deploy(DujeToken, name, symbol, decimals, initialSupply);
